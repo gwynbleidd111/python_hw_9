@@ -7,7 +7,7 @@ bot = telebot.TeleBot("TOKEN", parse_mode=None)
 
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-	bot.reply_to(message, "Здравствуйте!\nЭто Бот-калькулятор. Введите выражени, которое хотите вычислить.\nНапример: 1+2*3")
+	bot.reply_to(message, "Здравствуйте!\nЭто Бот-калькулятор. Введите выражение, которое хотите вычислить.\nНапример: 1+2*3")
         
 @bot.message_handler(content_types=['text'])
 def calculator(messege):
